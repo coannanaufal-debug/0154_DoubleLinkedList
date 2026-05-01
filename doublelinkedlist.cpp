@@ -93,3 +93,14 @@ void removeFirst() {
         delete del;
     }
 }
+
+void removeLast() {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        del = tail;
+        tail = tail->prev;
+        tail->next = NULL;
+        delete del;
+    }
+}
