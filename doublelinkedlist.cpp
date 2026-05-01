@@ -104,3 +104,12 @@ void removeLast() {
         delete del;
     }
 }
+
+void removeMiddle(int posisi) {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        if (posisi == 1 || posisi == countDoubleLinkedList()) {
+            cout << "Posisi bukan di tengah" << endl;
+        } else if (posisi < 1 || posisi > countDoubleLinkedList()) {
+            cout << "Posisi di luar jangkauan" << endl;
