@@ -142,4 +142,3 @@ void printDoubleLinkedList() {
         }
         cout << "NULL" << endl;
     }
-}
