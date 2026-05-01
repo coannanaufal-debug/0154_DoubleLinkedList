@@ -30,3 +30,16 @@ int countDoubleLinkedList() {
         return jumlah;
     }
 }
+
+void addFirst(int data) {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        newNode = new Node();
+        newNode->data = data;
+        newNode->prev = NULL;
+        newNode->next = head;
+        head->prev = newNode;
+        head = newNode;
+    }
+}
