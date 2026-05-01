@@ -56,3 +56,12 @@ void addLast(int data) {
         tail = newNode;
     }
 }
+
+void addMiddle(int data, int posisi) {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        if (posisi == 1) {
+            cout << "Posisi 1 bukan posisi tengah" << endl;
+        } else if (posisi < 1 || posisi > countDoubleLinkedList()) {
+            cout << "Posisi di luar jangkauan" << endl;
