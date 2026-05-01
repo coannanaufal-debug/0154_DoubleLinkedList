@@ -17,3 +17,16 @@ void createDoubleLinkedList(int data) {
     tail = head;
 }
 
+int countDoubleLinkedList() {
+    if (head == NULL) {
+        return 0;
+    } else {
+        int jumlah = 0;
+        cur = head;
+        while (cur != NULL) {
+            jumlah++;
+            cur = cur->next;
+        }
+        return jumlah;
+    }
+}
