@@ -82,3 +82,14 @@ void addMiddle(int data, int posisi) {
         }
     }
 }
+
+void removeFirst() {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        del = head;
+        head = head->next;
+        head->prev = NULL;
+        delete del;
+    }
+}
