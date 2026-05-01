@@ -43,3 +43,16 @@ void addFirst(int data) {
         head = newNode;
     }
 }
+
+void addLast(int data) {
+    if (head == NULL) {
+        cout << "Double Linked List belum dibuat" << endl;
+    } else {
+        newNode = new Node();
+        newNode->data = data;
+        newNode->prev = tail;
+        newNode->next = NULL;
+        tail->next = newNode;
+        tail = newNode;
+    }
+}
