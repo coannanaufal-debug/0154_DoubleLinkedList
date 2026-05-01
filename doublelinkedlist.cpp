@@ -9,3 +9,11 @@ struct Node {
 
 Node *head, *tail, *cur, *newNode, *del, *afterNode;
 
+void createDoubleLinkedList(int data) {
+    head = new Node();
+    head->data = data;
+    head->prev = NULL;
+    head->next = NULL;
+    tail = head;
+}
+
