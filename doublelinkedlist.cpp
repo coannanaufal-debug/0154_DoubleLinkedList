@@ -113,3 +113,18 @@ void removeMiddle(int posisi) {
             cout << "Posisi bukan di tengah" << endl;
         } else if (posisi < 1 || posisi > countDoubleLinkedList()) {
             cout << "Posisi di luar jangkauan" << endl;
+            } else {
+            int nomor = 1;
+            cur = head;
+            while (nomor < posisi - 1) {
+                cur = cur->next;
+                nomor++;
+            }
+            del = cur->next;
+            afterNode = del->next;
+            cur->next = afterNode;
+            afterNode->prev = cur;
+            delete del;
+        }
+    }
+}
