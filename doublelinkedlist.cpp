@@ -8,3 +8,4 @@ struct Node {
 };
 
 Node *head, *tail, *cur, *newNode, *del, *afterNode;
+
