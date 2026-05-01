@@ -65,3 +65,20 @@ void addMiddle(int data, int posisi) {
             cout << "Posisi 1 bukan posisi tengah" << endl;
         } else if (posisi < 1 || posisi > countDoubleLinkedList()) {
             cout << "Posisi di luar jangkauan" << endl;
+            } else {
+            newNode = new Node();
+            newNode->data = data;
+            cur = head;
+            int nomor = 1;
+            while (nomor < posisi - 1) {
+                cur = cur->next;
+                nomor++;
+            }
+            afterNode = cur->next;
+            newNode->prev = cur;
+            newNode->next = afterNode;
+            cur->next = newNode;
+            afterNode->prev = newNode;
+        }
+    }
+}
