@@ -142,3 +142,29 @@ void printDoubleLinkedList() {
         }
         cout << "NULL" << endl;
     }
+}
+
+int main() {
+    createDoubleLinkedList(10);
+    printDoubleLinkedList();
+
+    addFirst(5);
+    printDoubleLinkedList();
+
+    addLast(20);
+    printDoubleLinkedList();
+
+    addMiddle(15, 3);
+    printDoubleLinkedList();
+
+    removeFirst();
+    printDoubleLinkedList();
+
+    removeLast();
+    printDoubleLinkedList();
+
+    removeMiddle(2);
+    printDoubleLinkedList();
+
+    return 0;
+}
